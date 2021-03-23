@@ -39,13 +39,58 @@
 // }
 // console.log(getDiscount(7000));
 
-function checkStorage(available, ordered) {
-  let message;
-  // Пиши код ниже этой строки
-message=ordered > available?'На складе недостаточно товаров!':'Заказ оформлен, с вами свяжется менеджер';
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Пиши код ниже этой строки
+// message=ordered > available?'На складе недостаточно товаров!':'Заказ оформлен, с вами свяжется менеджер';
   
 
-  // Пиши код выше этой строки
+//   // Пиши код выше этой строки
+//   return message;
+// }
+// console.log(checkStorage(100, 50));
+
+// 27
+
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Пиши код ниже этой строки
+
+//  switch (type) { // Дополни эту строку
+//     case 'starter': // Дополни эту строку
+//       price = 0; // Дополни эту строку
+//       break;
+
+//     case 'professional': // Дополни эту строку
+//       price = 20; // Дополни эту строку
+//       break;
+
+//     case 'organization': // Дополни эту строку
+//       price = 50; // Дополни эту строку
+//       break;
+//   }
+
+//   // Пиши код выше этой строки
+//   return price;
+// }
+// console.log(getSubscriptionPrice('professional'));
+
+// 28
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  let message;
+  switch (password) {
+    case null:
+      message ='Отменено пользователем!';
+      break;
+    case ADMIN_PASSWORD:
+      message = 'Добро пожаловать!';
+      break;
+ 
+    default:
+      message = 'Доступ запрещен, неверный пароль!';
+  
+  }
   return message;
 }
-console.log(checkStorage(100, 50));
+console.log(checkPassword('jqueryismyjam'));
