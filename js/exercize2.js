@@ -82,18 +82,36 @@
 
 
 // #19
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
-  let message;
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
 
-  if (password===null) { // Дополни эту строку
-    message =  'Отменено пользователем!';
-  } else if (password===ADMIN_PASSWORD) { // Дополни эту строку
-    message = 'Добро пожаловать!';
-  } else {
-    message = 'Доступ запрещен, неверный пароль!';
-  }
+//   if (password===null) { // Дополни эту строку
+//     message =  'Отменено пользователем!';
+//   } else if (password===ADMIN_PASSWORD) { // Дополни эту строку
+//     message = 'Добро пожаловать!';
+//   } else {
+//     message = 'Доступ запрещен, неверный пароль!';
+//   }
 
-  return message;
-}
-console.log(checkPassword('jqueryismyjam'));
+//   return message;
+// }
+// console.log(checkPassword('jqueryismyjam'));
+
+// #20
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Пиши код ниже этой строки
+// if(ordered===0){
+//   message = `В заказе еще нет товаров`;
+//   }
+// else if (available < ordered) {
+//   message = `Слишком большой заказ, на складе недостаточно товаров!`;
+//   }
+// else {
+//    message = `Заказ оформлен, с вами свяжется менеджер`;
+//   }
+//   // Пиши код выше этой строки
+//   return message;
+// }
+// console.log(checkStorage(70, 0));
