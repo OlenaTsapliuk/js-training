@@ -76,21 +76,128 @@
 // console.log(getSubscriptionPrice('professional'));
 
 // 28
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
-  let message;
-  switch (password) {
-    case null:
-      message ='Отменено пользователем!';
-      break;
-    case ADMIN_PASSWORD:
-      message = 'Добро пожаловать!';
-      break;
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+//   switch (password) {
+//     case null:
+//       message ='Отменено пользователем!';
+//       break;
+//     case ADMIN_PASSWORD:
+//       message = 'Добро пожаловать!';
+//       break;
  
-    default:
-      message = 'Доступ запрещен, неверный пароль!';
+//     default:
+//       message = 'Доступ запрещен, неверный пароль!';
   
-  }
-  return message;
+//   }
+//   return message;
+// }
+// console.log(checkPassword('jqueryismyjam'));
+
+// #29
+// вариант1
+// function getShippingCost(country) {
+//   let message;
+//    let priceDelivery;
+//   // Пиши код ниже этой строки
+// switch (country){
+//   case 'Китай':
+//     priceDelivery = 100;
+//     message = `Доставка в ${country} будет стоить ${priceDelivery} кредитов`;
+//      break;
+//   case 'Чили':
+//     priceDelivery = 250;
+//     message = `Доставка в ${country} будет стоить ${priceDelivery} кредитов`;
+//     break;
+//   case 'Австралия':
+//     priceDelivery = 170;
+//     message = `Доставка в ${country} будет стоить ${priceDelivery} кредитов`;
+//     break;
+//   case 'Ямайка':
+//     priceDelivery = 120;
+//     message = `Доставка в ${country} будет стоить ${priceDelivery} кредитов`;
+//     break;
+
+//   default:
+//     message = `Извините, в вашу страну доставки нет`;
+// }
+//   // Пиши код выше этой строки
+//   return message;
+// }
+// console.log(getShippingCost('Ямайка'));
+//  вариант2
+// switch (country){
+//   case 'Китай':
+//     message = `Доставка в ${country} будет стоить 100 кредитов`;
+//     break;
+//   case 'Чили':
+//     message = `Доставка в ${country} будет стоить 250 кредитов`;
+//      break;
+//   case 'Австралия':
+//     message = `Доставка в ${country} будет стоить 170 кредитов`;
+//      break;
+//   case 'Ямайка':
+//     message = `Доставка в ${country} будет стоить 120 кредитов`;
+//     break;
+
+//   default:
+//     message = `Извините, в вашу страну доставки нет`;
+// }
+// 30
+// function getNameLength(name) {
+//   const message = `Длина вашего имени ${name.length} символа(ов)`; // Дополни эту строку
+
+//   return message;
+// }
+// console.log(getNameLength('Poly'));
+// 31
+// const courseTopic = 'JavaSript для начинающих';
+// // Пиши код ниже этой строки
+
+// const courseTopicLength = courseTopic.length;
+
+// const firstElement = courseTopic[0];
+
+// const lastElement = courseTopic[courseTopic.length-1];
+
+// console.log(courseTopicLength);
+
+// Пиши код выше этой строки
+
+// 32
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length);// Дополни эту строку
+
+//   return substring;
+// }
+//  console.log(getSubstring('Привет мир', 6));
+
+// #33
+// function formatMessage(message, maxLength) {
+//   let result;
+// // Пиши код ниже этой строки
+//   if (message.length < maxLength) {
+//     result = message;
+//   } else result = message.slice(0, maxLength) + '...';
+// // Пиши код выше этой строки
+//   return result;
+// }
+// console.log(formatMessage('Vestibulum facilisis purus nec', 25));
+
+// #35
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name); // Дополни эту строку
+//   return result;
+// }
+// console.log(checkForName('Егор Колбасов', 'Егор'));
+// 36
+function checkForSpam(message) {
+  let result;
+  // Пиши код ниже этой строки
+  result = message.includes('spam' || 'sale');
+
+  // Пиши код выше этой строки
+  return result;
 }
-console.log(checkPassword('jqueryismyjam'));
+console.log(checkForSpam('Get best sale offers now!'));
