@@ -194,10 +194,11 @@
 // 36
 function checkForSpam(message) {
   let result;
+  const normalizedMessage = message.toLowerCase();
   // Пиши код ниже этой строки
-  result = message.includes('spam' || 'sale');
+  result = normalizedMessage.includes('spam') ||normalizedMessage.includes('sale');
 
   // Пиши код выше этой строки
   return result;
 }
-console.log(checkForSpam('Get best sale offers now!'));
+console.log(checkForSpam('[SPAM] How to earn fast money?'));
