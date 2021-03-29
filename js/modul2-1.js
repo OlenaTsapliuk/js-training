@@ -66,12 +66,34 @@
 // console.log(splitMessage('лучшее_за_неделю', '_'));
 
 // 11
-function calculateEngravingPrice(message, pricePerWord) {
-  // Пиши код ниже этой строки
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Пиши код ниже этой строки
 
-let total = message.split(' ');
-   
-  return total;
-  // Пиши код выше этой строки
-}
-console.log(calculateEngravingPrice('JavaScript у меня в крови', 10));
+//     const totalPrice = message.split(' ').length*pricePerWord;
+//     // const lettersInNamber = letters.length;
+  
+//     // const total = lettersInNamber * pricePerWord;
+  
+//   return totalPrice;
+//   // Пиши код выше этой строки
+// }
+// console.log(calculateEngravingPrice('JavaScript у меня в крови', 20));
+
+// 12
+// function slugify(title) {
+//   // Пиши код ниже этой строки
+ 
+//     const slug = title.toLowerCase().split(' ').join('-');
+//     return slug;
+//   // Пиши код выше этой строки
+// }
+// console.log(slugify('Маcсивы для новичков'));
+
+// 13
+const fruits = ['яблоко', 'слива', 'груша', 'апельсин', 'банан'];
+// Пиши код ниже этой строки
+const firstTwoEls = fruits.slice(0, 1);
+const nonExtremeEls = fruits.slice(1, 3);
+const lastThreeEls = fruits.slice(-3);
+
+console.log(firstTwoEls);

@@ -192,13 +192,13 @@
 // }
 // console.log(checkForName('Егор Колбасов', 'Егор'));
 // 36
-function checkForSpam(message) {
-  let result;
-  const normalizedMessage = message.toLowerCase();
-  // Пиши код ниже этой строки
-  result = normalizedMessage.includes('spam') ||normalizedMessage.includes('sale');
+// function checkForSpam(message) {
+//   let result;
+//   const normalizedMessage = message.toLowerCase();
+//   // Пиши код ниже этой строки
+//   result = normalizedMessage.includes('spam') ||normalizedMessage.includes('sale');
 
-  // Пиши код выше этой строки
-  return result;
-}
-console.log(checkForSpam('[SPAM] How to earn fast money?'));
+//   // Пиши код выше этой строки
+//   return result;
+// }
+// console.log(checkForSpam('[SPAM] How to earn fast money?'));
