@@ -121,8 +121,8 @@
 // function calculateTotal(number) {
 //     // Пиши код ниже этой строки
 //     let total = 0;
-//     for (let i = 1; i <= number; i += 1) {
-//         total+=i;
+    // for (let i = 1; i <= number; i += 1) {
+    //     total+=i;
 //     }
 
 //     return total;
@@ -154,18 +154,139 @@
 // }
 // console.log(calculateTotalPrice([164, 48, 291]));
 
-// 21
-function findLongestWord(string) {
-  // Пиши код ниже этой строки
+// 21 разобрать
+// function findLongestWord(string) {
+//   // Пиши код ниже этой строки
+//   const words = string.split(' ');
   
-  let longestWord = string[0];
-    for (let i = 1; i < string.length; i += 1) {
-        if (string[i].length > longestWord.length) {
-            longestWord = string[i];
-        }
-        
-    }
-    return longestWord;
+//     let longestWord = words[0];
+    
+//    for (const word of words) {
+//       if (word.length > longestWord.length) {
+//             longestWord = word;
+//         }
+//    } 
+       
+//         return longestWord;
+//     }
+    
+    
+//   // Пиши код выше этой строки
+// console.log(findLongestWord('May the force be with you'));
+
+// 22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Пиши код ниже этой строки
+//   for (let i = min; i <=max; i+=1) {
+//     numbers.push(i);
+  
+// }
+//   // Пиши код выше этой строки
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(14, 17));
+
+// 23
+// function filterArray(numbers, value) {
+//   // Пиши код ниже этой строки
+//   let newNumbers = numbers[0];
+//   let a1=[];
+//   for (let i = 1; i <= numbers.length; i += 1){
+//     if (numbers[i] > value) {
+
+//        a1.push(numbers[i]);
+//    }
+    
+//   }
+//   return a1;
+//   // Пиши код выше этой строки
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// 24
+// function checkFruit(fruit) {
+//   const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
+
+//   // if (fruits.includes(fruit)) {
+//   //   return true;
+//   // }
+//   // const fruitIn= fruits.includes(fruit) ? true : false;
+//   return fruits.includes(fruit); // Дополни эту строку
+// }
+// console.log(checkFruit('абрикос'));
+// 25
+// function getCommonElements(array1, array2) {
+//   // Пиши код ниже этой строки
+ 
+//   const newArray = [];
+//   for (let i = 0; i < array1.length; i += 1){
+//     if (array2.includes(array1[i])) {
+//       newArray.push(array1[i]);
+//     }
+//   } return newArray;
+ 
+
+//   // Пиши код выше этой строки
+// }
+//  console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+// 26
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Пиши код ниже этой строки
+
+//   for (const attribute of order) {
+//     total += attribute;
+//   }
+
+//   // Пиши код выше этой строки
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// 27
+// function filterArray(numbers, value) {
+//   // Пиши код ниже этой строки
+//   const filteredNumbers = [];
+  
+//   for (let number of numbers) {
+    
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Пиши код выше этой строки
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+// 29
+// function getEvenNumbers(start, end) {
+//     // Пиши код ниже этой строки
+//   let arr = [];
+//   for (let i = start; i <= end; i += 1){
+//     if (i % 2 === 0) {
+//        console.log(i);
+//       arr.push(i);
+//   }
+    
+// }return arr;
+    
+//     // Пиши код выше этой строки
+// } console.log(getEvenNumbers(3, 11));
+// 32
+function includes(array, value) {
+  // Пиши код ниже этой строки
+
+  for (let i = 0; i <= array.length; i += 1) {
+    if (array[i] === value) {
+      return true;
     } 
-  // Пиши код выше этой строки
-console.log(findLongestWord('Google do a roll'));
+     return false;
+  
+    // Пиши код выше этой строки
+  }
+}
+console.log(includes([1, 2, 3, 4, 5], 2));
