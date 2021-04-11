@@ -295,4 +295,4 @@ function includes(array, value) {
     // Пиши код выше этой строки
   }
 
-console.log(includes([1, 2, 3, 4, 5], 2));
+// console.log(includes([1, 2, 3, 4, 5], 2));
