@@ -280,19 +280,19 @@
 
 
 // 32
-function includes(array, value) {
-  // Пиши код ниже этой строки
+// function includes(array, value) {
+//   // Пиши код ниже этой строки
 
-  for (let i = 0; i <= array.length; i += 1) {
-    if (array[i] === value) {
-      return true;
-    }
-  }
+//   for (let i = 0; i <= array.length; i += 1) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
       
-     return false;
+//      return false;
     
   
-    // Пиши код выше этой строки
-  }
+//     // Пиши код выше этой строки
+//   }
 
 // console.log(includes([1, 2, 3, 4, 5], 2));
