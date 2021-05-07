@@ -263,12 +263,9 @@ const users=[
 // 44
 
 const getTotalBalanceByGender = (users, gender) => {
-  return users.reduce((acc, user) => acc + users.balance)
-    .filter(user => user.gender === gender);
-
-
+     return users.filter(user => user.gender === gender)
+  .reduce((total,user)=>{
+    return total+user.balance
+   }, 0);
 };
-console.log(getTotalBalanceByGender(users))
  
-// const totalAveragePlaytimePerGame = players.reduce((acc,{playtime,gamesPlayed})=>{
-// return acc+playtime/gamesPlayed},0);
